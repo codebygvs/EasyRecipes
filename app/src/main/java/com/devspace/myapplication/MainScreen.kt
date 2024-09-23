@@ -1,5 +1,6 @@
 package com.devspace.myapplication
 
+
 import android.util.Log
 import coil.compose.AsyncImage
 import androidx.compose.foundation.clickable
@@ -34,6 +35,7 @@ import retrofit2.Response
 
 @Composable
 fun MainScreen(navHostController: NavHostController) {
+
 
     var recipes by rememberSaveable { mutableStateOf<List<RecipesDTO>>(emptyList()) }
     val retrofit = RetrofitClient.retrofitInstance.create(apiService::class.java)
